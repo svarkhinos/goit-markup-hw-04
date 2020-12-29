@@ -25,10 +25,20 @@
 
         <ul class="contact-nav">
             <li class="contact-nav-item">
-                <a class="menu-item contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="menu-item contacts" href="mailto:info@devstudio.com">
+                    <svg class="icon-contact" width="16" height="12">
+                        <use href="./images/symbol-defs.svg#icon-envelope">
+                        </use>
+                    </svg>
+                    info@devstudio.com</a>
             </li>
             <li class="contact-nav-item">
-                <a class="menu-item contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="menu-item contacts" href="tel:+380961111111">
+                    <svg class="icon-contact" width="10" height="16">
+                        <use href="./images/symbol-defs.svg#icon-smartphone">
+                        </use>
+                    </svg>
+                    +38 096 111 11 11</a>
             </li>
         </ul>
     </nav>
@@ -48,7 +58,7 @@
                     
                 <h2 class="hidden">Фото работ</h2>
                 <ul class="portfolio-list">
-                    <li class="portfolio-item"><a href="">
+                    <li class="portfolio-item"><a class="portfolio-link" href="">
                         <img class="portfolio-photo" src="./images/tekhnokryak.jpg" alt="На ноутбуке открыт сайт с 
                         тремя фотографиями людей" width="370">
                             <div class="portfolio-photo-description">
@@ -56,7 +66,7 @@
                             <p class="portfolio-item-text">Веб-сайт</p>
                             </div>
                     </a></li>
-                    <li class="portfolio-item"><a href="">
+                    <li class="portfolio-item"><a class="portfolio-link" href="">
                         <img class="portfolio-photo" src="./images/NewOrlean.jpg" alt="Двое мужчин играют в 
                         баскетбол" width="370">
                             <div class="portfolio-photo-description">
@@ -64,7 +74,7 @@
                             <p class="portfolio-item-text">Дизайн</p>
                             </div>
                     </a></li>
-                    <li class="portfolio-item"><a href="">
+                    <li class="portfolio-item"><a class="portfolio-link" href="">
                         <img class="portfolio-photo" src="./images/seafood.jpg" alt="Логотип ресторана на 
                         фоне рыбы" width="370">
                             <div class="portfolio-photo-description">
@@ -72,7 +82,7 @@
                             <p class="portfolio-item-text">Приложение</p>
                             </div>
                     </a></li>
-                    <li class="portfolio-item"><a href="">
+                    <li class="portfolio-item"><a class="portfolio-link" href="">
                         <img class="portfolio-photo" src="./images/prime.jpg" alt="Накладные беспроводные наушники" 
                         width="370">
                             <div class="portfolio-photo-description">
@@ -80,7 +90,7 @@
                             <p class="portfolio-item-text">Маркетинг</p>
                             </div>
                     </a></li>
-                    <li class="portfolio-item"><a href="">
+                    <li class="portfolio-item"><a class="portfolio-link" href="">
                         <img class="portfolio-photo" src="./images/boxes.jpg" alt="Две коробки, белая и меньшего 
                         размера бежевая" width="370">
                             <div class="portfolio-photo-description">
@@ -88,7 +98,7 @@
                             <p class="portfolio-item-text">Приложение</p>
                             </div>
                     </a></li>
-                    <li class="portfolio-item"><a href="">
+                    <li class="portfolio-item"><a class="portfolio-link" href="">
                         <img class="portfolio-photo" src="./images/inspiration.jpg" alt="На мониторе apple в темном
                         стиле карта мира и навигация" width="370">
                             <div class="portfolio-photo-description">
@@ -96,7 +106,7 @@
                             <p class="portfolio-item-text">Веб-сайт</p>
                             </div>
                     </a></li>
-                    <li class="portfolio-item"><a href="">
+                    <li class="portfolio-item"><a class="portfolio-link" href="">
                         <img class="portfolio-photo" src="./images/limitedEd.jpg" alt="Разворот журнала с 
                         фотографиями" width="370">
                             <div class="portfolio-photo-description">
@@ -104,7 +114,7 @@
                             <p class="portfolio-item-text">Дизайн</p>
                             </div>
                     </a></li>
-                    <li class="portfolio-item"><a href="">
+                    <li class="portfolio-item"><a class="portfolio-link" href="">
                         <img class="portfolio-photo" src="./images/lab.jpg" alt="Белая бирка с надписью"
                         width="370">
                             <div class="portfolio-photo-description">
@@ -112,7 +122,7 @@
                             <p class="portfolio-item-text">Маркетинг</p>
                             </div>
                     </a></li>
-                    <li class="portfolio-item"><a href="">
+                    <li class="portfolio-item"><a class="portfolio-link" href="">
                         <img class="portfolio-photo" src="./images/growingB.jpg" alt="Человек открыл сайт 
                         на ноутбуке" width="370">
                             <div class="portfolio-photo-description">
@@ -125,17 +135,55 @@
         </section>
 
 </main>
-        <footer>
-            <div class="container">
-                <a href="index.html" class="logo footer-logo">
-                    <span class="logo-start">Web</span>Studio</a>
-                <address><span class="footer-address content-text">
-                        г. Киев, пр-т Леси Украинки, 26</span>
-                    <a class="footer-contacts content-text" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    <a class="footer-contacts content-text" href="tel:+380961111111">+38 096 111 11 11</a>
-                </address>
-            </div>
-        </footer>
+    <footer>
+        <div class="container">
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a href="index.html" class="logo footer-logo">
+                        <span class="logo-start">Web</span>Studio</a>
+                    <address><span class="footer-address content-text">
+                            г. Киев, пр-т Леси Украинки, 26</span>
+                        <a class="footer-contacts content-text" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="footer-contacts content-text" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </address>
+                </li>
+                <li class="footer-item">
+                    <p class="benefits-item-title">присоединяйтесь</p>
+                    <ul class="footer-actions actions">
+                        <li class="footer-actions-item actions-item">
+                            <a class=" footer-link action-link" href="">
+                                <svg class="icon-link">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-actions-item actions-item">
+                            <a class="footer-link action-link" href="">
+                                <svg class="icon-link">
+                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-actions-item actions-item">
+                            <a class="footer-link action-link" href="">
+                                <svg class="icon-link">
+                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-actions-item actions-item">
+                            <a class="footer-link action-link" href="">
+                                <svg class="icon-link">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+    
+                </li>
+            </ul>
+        </div>
+    </footer>
 
     </body>
 </html>

@@ -5,7 +5,10 @@
 
   --primary-white-color: #ffffff;
   --light-background-color: #f5f4fa;
+  --hero-background-color: #c4c4c4;
   --dark-background-color: #2f303a;
+
+  --icons-color: #afb1b8;
 
   --portfolio-list-gap: 30px;
 }
@@ -94,7 +97,7 @@ img {
   margin-right: 50px;
 }
 .contact-nav .contact-nav-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .site-nav .link {
@@ -112,7 +115,8 @@ img {
   color: var(--accent-color);
 }
 .contacts {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -123,12 +127,35 @@ img {
   color: var(--accent-color);
 }
 
+.icon-contact {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 /* Секция1 Герой*/
 .hero {
   padding-top: 201px;
   padding-bottom: 201px;
-  background-color: var(--dark-background-color);
+  background-color: var(--hero-background-color);
 }
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Img_hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -164,6 +191,7 @@ img {
 
   cursor: pointer;
   border: none;
+  outline: transparent;
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
@@ -196,6 +224,7 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
 
+  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--title-text-color);
 }
@@ -207,11 +236,49 @@ img {
 .benefits-item {
   width: 270px;
 }
+
 .content-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
+
+.benefits-phon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+
+  background-color: var(--light-background-color);
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
+}
+/*               картинки с использованием before  
+                            .benefits-item::before {
+                              content: '';
+                              display: block;
+                              height: 120px;
+
+                              background-position: center;
+                              background-repeat: no-repeat;
+                              background-color: var(--light-background-color);
+                            }
+
+                            .icon-antenna::before {
+                              background-image: url(../images/antenna.png);
+                            }
+                            .icon-clock::before {
+                              background-image: url(../images/clock.png);
+                            }
+                            .icon-diagram::before {
+                              background-image: url(../images/diagram.png);
+                            }
+                            .icon-astronaut::before {
+                              background-image: url(../images/astronaut.png);
+                            }  */
 
 /* Чем мы занимаемся*/
 
@@ -255,7 +322,7 @@ img {
 
 .teem-item-description {
   padding-top: 25px;
-  padding-bottom: 35px;
+  padding-bottom: 16px;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -290,6 +357,81 @@ img {
   font-weight: 400;
 }
 
+.actions {
+  display: flex;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+
+.actions-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.action-link {
+  display: inline-flex;
+  padding: 12px;
+  border-radius: 50%;
+  color: var(--icons-color);
+}
+
+.action-link:hover,
+.action-link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  fill: currentColor;
+}
+
+.icon-link {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/*Секция 5   Клиенты*/
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  color: var(--icons-color);
+}
+.client-list {
+  display: flex;
+}
+
+.client-list .client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-icon {
+  fill: currentColor;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+.client-item:hover {
+  color: var(--accent-color);
+}
+
 /* Footer*/
 footer {
   padding-top: 52px;
@@ -315,6 +457,31 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-list {
+  display: flex;
+}
+.footer-list .footer-item:not(:last-child) {
+  margin-right: 70px;
+}
+.benefits-item-title {
+  margin-top: 13px;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+}
+
+.footer-actions {
+  padding: 0;
+}
+
+.footer-actions-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-link {
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
 /* портфолио*/
 
 .portfolio {
@@ -386,6 +553,15 @@ address {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
+}
+
+.portfolio-link {
+  display: block;
+}
+.portfolio-item .portfolio-link:hover,
+.portfolio-item .portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-list {
